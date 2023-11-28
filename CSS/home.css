@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Work+Sans:wght@200;300;400;500;600&display=swap');
+/*
+font-family: 'Arimo', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #2b2b2b;
+    --cor-secundaria: #ffafcc;
+    --cor-fundo: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px; 
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .column{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .column img{
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+@media (max-width: 660px){
+    .container .box {
+        flex-direction: column;
+    }
+    .container .box .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px){
+    .container{
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media (max-width: 320px){
+    .container{
+        margin: 0 10px 0 10px;
+    }
+}

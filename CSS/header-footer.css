@@ -63,8 +63,7 @@ header {
     transition: transform 0.5s;
 }
 
-.navigation a:hover::after, 
-.navigation a.selected::after {
+.navigation a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -147,7 +146,8 @@ nav ul li {
         position: fixed;
         width: 100%;
         height: 100vh;
-        top: 80px;
+        top: 60px;
+        background: var(--cor-fundo);
         text-align: center;
     }
 
@@ -179,6 +179,7 @@ nav ul li {
 footer {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin: 30px;
 }
 
 a{
@@ -188,5 +189,9 @@ a{
 
 p a {
     margin-left: 5px;
+}
+
+.icon-footer {
+    font-size: 20px;
 }
 /*FIM Footer*/
