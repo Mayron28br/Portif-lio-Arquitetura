@@ -136,13 +136,11 @@ nav ul li {
     left: 5px;
 }
 
+/*FIM Barra de navegação header*/
+
 @media (max-width: 660px){
     .burger {
         display: block;
-    }
-    
-    header{
-        position: fixed;
     }
 
     ul {
@@ -174,6 +172,21 @@ nav ul li {
     }
 }
 
-/*FIM Barra de navegação header*/
-
 /*FIM Header*/
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p a {
+    margin-left: 5px;
+}
+/*FIM Footer*/
