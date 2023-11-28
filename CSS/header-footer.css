@@ -143,12 +143,13 @@ nav ul li {
     }
 
     ul {
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100vh;
         top: 60px;
         background: var(--cor-fundo);
         text-align: center;
+        z-index: 999;
     }
 
     nav ul li{
