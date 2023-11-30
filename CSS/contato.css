@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Raleway:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Work+Sans:wght@200;300;400;500;600&display=swap');
+/*
+font-family: 'Arimo', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --cor-primaria: #2b2b2b;
+    --cor-secundaria: #ffafcc;
+    --cor-fundo: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato h2 {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contato form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-boxs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-boxs .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid var(--cor-primaria);
+    outline: none;
+    font-size: 16px;
+    color: black;
+    margin: 12px 0;
+}
+
+.field .item::placeholder {
+    color: var(--cor-primaria);
+}
+
+.field .error-text {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-text {
+    margin-top: -10px ;
+}
+
+form button {
+    padding: 12px 32px;
+    background-color: var(--cor-primaria);
+    border: none;
+    box-shadow: 0 0 8px gray;
+    font-size: 16px;
+    color: var(--cor-fundo);
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    box-shadow: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="stylesheet" href="CSS/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-header">BÁRBARA ARCHITECT</a>
+        <nav class="navigation">
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="index.html" class="selected">INÍCIO</a></li>
+                <li><a href="Projetos.html">PROJETOS</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="JavaScript/header-footer.js"></script>
+
+    <main>
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+
+            <form action="#">
+                <div class="input-boxs">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Nome Completo" id="name" class="item" autocomplete="off">
+                        <div class="error-text">Nome completo não pode estar vazio</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Endereço de Email" id="email" class="item" autocomplete="off">
+                        <div class="error-text">Endereço de email não pode estar vazio</div>
+                    </div>
+                </div>
+
+                <div class="input-boxs">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Número de Telefone" id="phone" class="item" autocomplete="off">
+                        <div class="error-text">Número de telefone não pode estar vazio</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Assunto" id="subject" class="item" autocomplete="off">
+                        <div class="error-text">Assunto não pode estar vazio</div>
+                    </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Sua Mensagem" class="item" autocomplete="off"></textarea>
+                    <div class="error-text">Mensagem não pode estar vazio</div>
+                </div>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>    
+        <script src="JavaScript/contato.js"></script>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 / Made by<a href="#">Code Ways</a></p><br>
+        <p>
+            <a href="https://wa.me/5581999933846" target="_blank"><i class="fa-brands fa-whatsapp icon-footer"></i>
+            </a>
+            <a href="https://www.instagram.com/barbaralayss/"><i class="fa-brands fa-instagram icon-footer"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
