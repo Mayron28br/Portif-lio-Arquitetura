@@ -39,14 +39,14 @@ font-family: 'Work Sans', sans-serif;
     margin: 20px 0 20px 0;
 }
 
-.container .image-container .image img {
+.image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: filter 0.5s;
 }
 
-.container .image-container .image::before {
+.image::before {
     content: '';
     position: absolute;
     top: 0;
@@ -59,11 +59,11 @@ font-family: 'Work Sans', sans-serif;
     z-index: 1;
 }
 
-.container .image-container .image:hover::before {
+.image:hover::before {
     opacity: 0.5;
 }
 
-.container .image-container .image:hover img {
+.image:hover img {
     filter: blur(1px);
 }
 
@@ -81,7 +81,7 @@ font-family: 'Work Sans', sans-serif;
     z-index: 3;
 }
 
-.container .image-container .image:hover .image-text{
+.image:hover .image-text {
     opacity: 1;
 }
 
