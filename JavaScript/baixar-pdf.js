@@ -3,7 +3,7 @@ function baixarPDF() {
   
     var link = document.createElement('a');
     link.href = urlPDF;
-    link.download = 'nome_do_arquivo.pdf';
+    link.download = 'Bárbara_arquiteta.pdf';
   
     document.body.appendChild(link);
     link.click();
