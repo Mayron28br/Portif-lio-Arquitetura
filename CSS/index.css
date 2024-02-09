@@ -129,7 +129,6 @@ font-family: 'Work Sans', sans-serif;
 }
 
 .popup.active .close-btn,
-.popup.active .image-name,
 .popup.active .index,
 .popup.active .large-image,
 .popup.active .arrow-btn {
@@ -141,12 +140,11 @@ font-family: 'Work Sans', sans-serif;
 .top-bar {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: auto;
     height: 50px;
     background: #fff;
     color: #2b2b2b;
-    text-align: center;
     line-height: 50px;
     font-weight: 400px;
 }
@@ -163,6 +161,10 @@ font-family: 'Work Sans', sans-serif;
     height: 15px;
     cursor: pointer;
     font-size: 16px;
+}
+
+.close-btn:hover {
+    color: gray;
 }
 
 .arrow-btn {
